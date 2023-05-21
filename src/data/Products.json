@@ -1,0 +1,32 @@
+[
+  {
+    "img": "https://static-01.daraz.pk/p/6f6fe9b98134f92634b4e6372d33c245.jpg",
+    "title": "Apple watch",
+    "price": 320
+  },
+  {
+    "img": "https://static-01.daraz.pk/p/afd70dc554e09b0d52a4ca69eff560b4.jpg",
+    "title": "earphone",
+    "price": 60
+  },
+  {
+    "img": "https://static-01.daraz.pk/p/b15a62ae9bbb4e74c1ee1ca5e3458d47.jpg",
+    "title": "powerBank",
+    "price": 100
+  },
+  {
+    "img": "https://static-01.daraz.com.np/p/82aeb1b61adb77090512394c148c8a55.jpg",
+    "title": "Mac book Air",
+    "price": 999
+  },
+  {
+    "img": "https://static-01.daraz.com.np/p/e5c2bba56afa70b5ecaee534a26f99d5.jpg",
+    "title": "Sony Bravia",
+    "price": 1225
+  },
+  {
+    "img": "https://static-01.daraz.com.np/p/a0542d2bbb90159dbf435cf98fa90624.jpg",
+    "title": "Iphone 14 pro max",
+    "price": 1358
+  }
+]
