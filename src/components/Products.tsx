@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import products from "../data/Products.json";
+import { ActionState, Appcontext } from "../store/Reducer";
 
 interface Products {
   img: string;
-  title: String;
+  title: string;
   price: number;
 }
+
 const Products: React.FC = () => {
+  const { dispatch } = useContext(Appcontext);
+  const getProducts = (data: Products) => {
+    const action: ActionState = {
+      type: "ADD_PRODUCT",
+      payload: data,
+    };
+    dispatch(action);
+  };
   return (
     <>
       {products.map((data: Products) => {
@@ -19,7 +29,12 @@ const Products: React.FC = () => {
               <h2 className="card-title">{data.title}</h2>
               <p className="text-green-500 font-bold text-xl">${data.price}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Add to cart</button>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => getProducts(data)}
+                >
+                  Add to cart
+                </button>
               </div>
             </div>
           </div>
