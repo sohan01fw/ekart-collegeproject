@@ -1,17 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import Products from "./components/Products";
-import { Appcontext } from "./store/Reducer";
+
+import Footer from "./components/Footer";
 
 export const Home: React.FC = () => {
-  const { state } = useContext(Appcontext);
-  console.log(state);
-
   return (
-    <div className="sm:ml-16 sm:mr-16">
+    <div className="">
       <div className="nav">
-        {" "}
         <Nav />
       </div>
 
@@ -19,8 +16,10 @@ export const Home: React.FC = () => {
         <Banner />
       </div>
       <div className="products flex flex-wrap mt-10">
-        {" "}
         <Products />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

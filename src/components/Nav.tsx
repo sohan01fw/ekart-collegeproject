@@ -1,11 +1,15 @@
 import React from "react";
 import profile from "../assets/Images/profile.png";
+import { Link } from "react-router-dom";
 const Nav: React.FC = () => {
   return (
-    <div className="navbar bg-base-100 top-0 sticky z-50">
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-3xl font-bold">E-kart</a>
-      </div>
+    <div className="navbar bg-base-100 top-0 fixed z-50 ">
+      <Link to="/" className="flex-1">
+        <div>
+          <a className="btn btn-ghost normal-case text-3xl font-bold">E-kart</a>
+        </div>
+      </Link>
+
       <div className="flex-none ">
         <div className="dropdown dropdown-end mr-3 ">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -34,9 +38,13 @@ const Nav: React.FC = () => {
             <div className="card-body">
               <span className="font-bold text-lg">8 Items</span>
               <span className="text-info">Subtotal: $999</span>
-              <div className="card-actions">
-                <button className="btn btn-primary btn-block">View cart</button>
-              </div>
+              <Link to="/cart">
+                <div className="card-actions">
+                  <button className="btn btn-primary btn-block">
+                    View cart
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Products: React.FC = () => {
     <>
       {products.map((data: Products) => {
         return (
-          <div className="card w-96 bg-base-100 shadow-xl m-10 ml-24">
+          <div className="card w-96 bg-base-100 shadow-xl m-10 ml-24 rounded-2xl">
             <figure>
               <img src={data.img} alt="" className="w-[20rem]" />
             </figure>
